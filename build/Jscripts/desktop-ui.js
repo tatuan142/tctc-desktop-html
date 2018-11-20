@@ -47,6 +47,15 @@ $('.slider-nav .wrap').bxSlider({
 	prevSelector: ".slider-nav .btn-prev"
 });
 
+$('.portrait-box .wrap').bxSlider({
+	controls: false,
+	slideWidth: 300,
+	minSlides: 1,
+	maxSlides: 1
+});
+
+
+
 
 $(function(){
 	$('.abf .list-stories .wrap').slimscroll({

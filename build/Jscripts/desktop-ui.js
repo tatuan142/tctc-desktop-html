@@ -54,9 +54,6 @@ $('.portrait-box .wrap').bxSlider({
 	maxSlides: 1
 });
 
-
-
-
 $(function(){
 	$('.abf .list-stories .wrap').slimscroll({
 	  height: '250px'

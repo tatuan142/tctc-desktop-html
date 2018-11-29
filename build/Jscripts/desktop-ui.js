@@ -48,6 +48,8 @@ $('.slider-nav .wrap').bxSlider({
 });
 
 $('.portrait-box .wrap').bxSlider({
+    auto : true,
+    pause : 10000,
 	controls: false,
 	slideWidth: 300,
 	minSlides: 1,

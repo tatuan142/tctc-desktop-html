@@ -58,6 +58,6 @@ $('.portrait-box .wrap').bxSlider({
 
 $(function(){
 	$('.abf .list-stories .wrap').slimscroll({
-	  height: '250px'
+	  height: '238px'
 	});
 });

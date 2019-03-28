@@ -39,13 +39,24 @@ $('.abf .col-560 .wrap').bxSlider({
 	maxSlides: 1
 });
 
+
+var bxActiveItem;
+$('.bxslider a').hover(function(e){
+    bxActiveItem = $(this);
+});
+$('.bxslider').parent().click(function(e){
+   if(bxActiveItem != null) window.location = bxActiveItem.attr('href');
+});
+
 $('.slider-nav .wrap').bxSlider({
 	minSlides: 3,
 	maxSlides: 3,
 	slideWidth : 280,
 	nextSelector: ".slider-nav .btn-next",
-	prevSelector: ".slider-nav .btn-prev"
+	prevSelector: ".slider-nav .btn-prev",
+    onSlideBefore: function() { bxActiveItem = null;}
 });
+
 
 $('.portrait-box .wrap').bxSlider({
     auto : true,
@@ -53,7 +64,8 @@ $('.portrait-box .wrap').bxSlider({
 	controls: false,
 	slideWidth: 300,
 	minSlides: 1,
-	maxSlides: 1
+	maxSlides: 1,
+	onSlideBefore: function() { bxActiveItem = null;}
 });
 
 $(function(){
